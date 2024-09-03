@@ -5,7 +5,7 @@ void main() {
 }
 
 class BankingApp extends StatelessWidget {
-  const BankingApp({Key? key}) : super(key: key);
+  const BankingApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +20,13 @@ class BankingApp extends StatelessWidget {
 }
 
 class BankingHomePage extends StatefulWidget {
-  const BankingHomePage({Key? key}) : super(key: key);
+  const BankingHomePage({super.key});
 
   @override
-  _BankingHomePageState createState() => _BankingHomePageState();
+  BankingHomePageState createState() => BankingHomePageState();
 }
 
-class _BankingHomePageState extends State<BankingHomePage> {
+class BankingHomePageState extends State<BankingHomePage> {
   final _formKey = GlobalKey<FormState>();
   final List<String> _transactions = [];
   final TextEditingController _transactionController = TextEditingController();
